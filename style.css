@@ -306,7 +306,7 @@ nav ul li a {
   border-radius: 7px;
 }
 
-.overlay {
+/* .overlay {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -320,9 +320,9 @@ nav ul li a {
 
 .single-service:hover .overlay {
   opacity: 1;
-}
+} */
 
-.service-desc {
+/* .service-desc {
   width: 80%;
   position: absolute;
   bottom: 0%;
@@ -330,7 +330,7 @@ nav ul li a {
   opacity: 0;
   transform: translateX(-50%);
   transition: 1s;
-}
+} */
 
 hr {
   background: #fff;
@@ -344,10 +344,45 @@ hr {
   font-size: 14px;
 }
 
-.single-service:hover .service-desc {
+/* .single-service:hover .service-desc {
   bottom: 40%;
   opacity: 1;
+} */
+
+@media screen and (min-width: 1064px) {
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(58, 58, 58, 0.144), #7c5426);
+    opacity: 0;
+    transition: 1s;
+  }
+
+  .single-service:hover .overlay {
+    opacity: 1;
+  }
+
+  .service-desc {
+    width: 80%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+  }
+
+  .single-service:hover .service-desc {
+    bottom: 40%;
+    opacity: 1;
+  }
 }
+
+
 
 @media screen and (max-width: 1064px) {
   .single-service {
@@ -365,6 +400,28 @@ hr {
 
   .single-service:hover .service-desc {
     bottom: 25% !important;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(58, 58, 58, 0.144), #7c5426);
+  }
+
+  .single-service .overlay {
+    opacity: 1;
+  }
+
+  .service-desc {
+    width: 80%;
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    opacity: 1;
   }
 }
 
